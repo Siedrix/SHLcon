@@ -1,0 +1,9 @@
+html
+head
+	title= "Hello world"
+	link(href="public/style/style.css", rel="stylesheet", type="text/css")
+	script(src="public/js/jquery-1.4.2.js")
+	script(src="public/js/faye-browser-min.js")
+	script(src="public/js/main.js")
+body
+	!= render(content, context)

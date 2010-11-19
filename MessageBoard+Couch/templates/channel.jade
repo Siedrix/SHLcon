@@ -1,0 +1,12 @@
+#header
+	h1 Channel #{channel}
+	span "Nombre de Usuario"
+	input(type="text")#user
+	span "Mensaje"
+	input(type="text")#message
+	button#submit "Enviar Mensaje"
+	ul#messages
+		- messages.forEach(function(item){
+		li #{item.user}:#{item.text}
+		- })
+
